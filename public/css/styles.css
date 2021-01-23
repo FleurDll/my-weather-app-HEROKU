@@ -1,0 +1,276 @@
+
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+
+body {
+  background-color: #2D4059;
+  height: 100%;
+}
+
+.fleche-retour {
+  color: #FFB400;
+  font-size: 60px;
+  position: absolute;
+  top: 40px;
+  left: 60px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.meteo {
+  height: 540px;
+  width: 520px;
+  background-color: #fff;
+  border: solid;
+  border-radius: 12px;
+  border-color: #fff;
+  border-width: 5px;
+  margin-top: 5%;
+  -webkit-box-shadow: 0px 0px 40px -13px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 0px 40px -13px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 40px -13px rgba(0, 0, 0, 0.7);
+}
+
+.meteo-top {
+  background: center / cover no-repeat url(../images/etoile-bg.jpg);
+  height: 37%;
+  border-radius: 12px 12px 0 0;
+}
+
+.img-nuage-soleil {
+  position: relative;
+  top: 112px;
+  border: solid;
+  border-radius: 50%;
+  border-color: #2D4059;
+  border-top-color: #FFB400;
+  border-right-color: #FFB400;
+  border-width: 4px;
+  width: 140px;
+}
+
+.separation {
+  background-color: #FFB400;
+  height: 4px;
+  width: 520px;
+}
+
+.meteo-bottom {
+  height: 50%;
+}
+
+.form-meteo1 {
+  margin-top: 130px;
+}
+
+.ville-input {
+  height: 30px;
+}
+
+input[type="text"] {
+  font-size: 1.5rem;
+}
+
+.button {
+  min-width: 12rem;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.6rem 1rem;
+  margin: 2rem;
+  border: 4px solid;
+  position: relative;
+  color: #2D4059;
+  border-color: #2D4059;
+}
+
+.button:hover {
+  color: #fff;
+  background-color: #FFB400;
+  border-color: #FFB400;
+}
+
+/* 2 EME PAGE */
+h2 {
+  font-size: 19px;
+  width: 220px;
+  border: solid;
+  border-color: #2D4059;
+  color: #2D4059;
+  padding: 8px;
+  font-family: 'Montserrat', sans-serif;
+  margin: 20px 0;
+}
+
+span {
+  color: black;
+  font-weight: bold;
+}
+
+.city {
+  margin-top: 80px;
+  color: #2D4059;
+  margin-bottom: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+}
+
+.second {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.separation-verticale {
+  height: 95px;
+  width: 4px;
+  background-color: #FFB400;
+  margin: 10px;
+}
+
+.button-retour {
+  min-width: 6rem;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  line-height: 1.3;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  padding: 0.6rem 0.1rem;
+  margin: 2rem;
+  border: 4px solid;
+  position: relative;
+  color: #FFB400;
+  border-color: #FFB400;
+}
+
+.button-retour:hover {
+  color: #fff;
+  background-color: #FFB400;
+  border-color: #FFB400;
+}
+
+/* PAGE ERREUR */
+.container-erreur {
+  margin: 120px 0 0 250px;
+}
+.titre-erreur {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+.description-plus-img {
+  display: flex;
+  flex-direction: row;
+}
+
+.description-erreur {
+  font-family: 'Montserrat', sans-serif;
+  width: 400px;
+}
+
+.img-erreur {
+   width: 150px;
+   margin-left: 450px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1028px) {
+  .meteo {
+    width: 950px;
+    height: 900px;
+    margin-top: 10%;
+    border-width: 9px;
+  }
+
+  .img-nuage-soleil {
+    top: 180px;
+    width: 250px;
+    border-width: 7px;
+  }
+
+  .separation {
+    height: 8px;
+    width: 950px;
+  }
+
+  .form-meteo1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ville-input {
+    height: 60px;
+    margin-top: 50px;
+  }
+
+  input[type="text"] {
+    font-size: 45px;
+  }
+
+  .button {
+    min-width: 15rem;
+    font-size: 2.5rem;
+    padding: 1.2rem 1rem;
+    margin: 4rem;
+  }
+
+  h2 {
+    font-size: 35px;
+    width: 435px;
+    margin: 30px 0;
+  }
+
+  .city {
+    margin-top: 115px;
+    font-size: 65px;
+    margin-bottom: 25px;
+  }
+
+  .second {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .separation-verticale {
+    height: 105px;
+    width: 7px;
+    margin: 15px;
+  }
+
+  .button-retour {
+    min-width: 10rem;
+    font-size: 2.5rem;
+    padding: 0.8rem 0.8rem;
+    margin: 2rem 0 0 2rem;
+    border: 4px solid;
+  }
+
+  /* PAGE ERREUR */
+
+  .container-erreur {
+    margin: 50px 0 0 100px;
+  }
+
+  .titre-erreur {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+  }
+
+  .img-erreur {
+     margin-left: 250px;
+  }
+}

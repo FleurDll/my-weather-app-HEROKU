@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Météo</title>
+
+  <link rel="icon" href="/images/rainbow.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- GOOGLEFONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="meteo">
+
+      <div class="meteo-top">
+        <img class="img-nuage-soleil" src="images/cloudy.png" alt="">
+      </div>
+
+      <div class="separation"></div>
+
+      <div class="meteo-bottom">
+        <form class="form-meteo1" action="/" method="post">
+          <input id="cityInput" class="ville-input" type="text" name="cityName" placeholder="ville" required autocomplete="off" autofocus>
+          <button id="submitLocation" class="button button-fill" type="submit">Valider</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

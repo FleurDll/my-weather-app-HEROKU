@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Météo</title>
+
+  <!-- ICONE -->
+  <link rel="icon" href="/images/rainbow.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <form action="/meteo2" method="post">
+    <button class="button-retour" type="submit" name="button">Retour</button>
+  </form>
+
+  <div class="container">
+
+    <div class="meteo">
+
+      <div class="meteo-top">
+        <img class="img-nuage-soleil" src="images/cloudy.png" alt="">
+      </div>
+      <div class="separation">
+
+      </div>
+      <div class="meteo-bottom meteo-bottom-resultats">
+        <div class="first">
+          <h1 class="city"><%= city %></h1>
+        </div>
+
+        <div class="second">
+
+          <div class="colonne1">
+            <h2>Température : <span> <%= temp %> </span></h2>
+            <h2>Ressentie : <span> <%= tempRessentie %> </span></h2>
+          </div>
+
+          <div class="separation-verticale"></div>
+
+          <div class="colonne2">
+            <h2>Humidité : <span> <%= humidite %> </span></h2>
+            <h2>Vent : <span> <%= vent %> </span></h2>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

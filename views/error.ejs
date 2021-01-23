@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Erreur</title>
+
+  <link rel="icon" href="/images/rainbow.ico">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- BOOTSTRAP  -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- GOOGLEFONT -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div class="jumbotron jumbotron-fluid">
+
+    <div class="container-erreur">
+
+      <h1 class="titre-erreur display-4">Oh no !</h1>
+      <br>
+      <div class="description-plus-img">
+        <p class="description-erreur lead">Tu dois introduire le nom d'une ville. <br> Réessaie !</p>
+        <img class="img-erreur" src="images/sad.png" alt="img-sad">
+      </div>
+
+      <form action="/failure" method="post">
+        <button class="button" type="submit" name="button">Retour</button>
+      </form>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
