@@ -26,7 +26,7 @@ app.get("/", function(req, res) {
 // HOME ROUTE POST REQUESTS
 app.post("/", function(req, res) {
   const query = req.body.cityName;
-  const apiKey = ~;
+  const apiKey = "0d19090abb5a0f99a36820be42fa1bcc";
   const units = "metric";
   const langue = "fr";
   const url = "https://api.openweathermap.org/data/2.5/weather?q=" + query + "&lang=" + langue + "&appid=" + apiKey + "&units=" + units;
@@ -46,6 +46,7 @@ app.post("/", function(req, res) {
     if (response.statusCode === 200) {
       response.on("data", function(data) {
         const weatherData = JSON.parse(data);
+        const country = weatherData.sys.country;
         const temp = weatherData.main.temp;
         const tempRessentie = weatherData.main.feels_like;
         const vent = weatherData.wind.speed;
@@ -55,11 +56,14 @@ app.post("/", function(req, res) {
 
         res.render(__dirname + "/views/meteo2.ejs", {
           city: queryRight,
+          country: country,
+          imageURL: "http://openweathermap.org/img/wn/" + icon + "@2x.png",
           temp: temp + "°C",
           tempRessentie: tempRessentie + "°C",
           humidite: humidity + "%",
           vent: vent + "km/h"
         });
+
       });
     } else {
       res.render(__dirname + "/views/error.ejs");

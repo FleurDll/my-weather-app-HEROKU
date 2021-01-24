@@ -38,13 +38,13 @@ body {
 
 .meteo-top {
   background: center / cover no-repeat url(../images/etoile-bg.jpg);
-  height: 37%;
+  height: 200px;
   border-radius: 12px 12px 0 0;
 }
 
 .img-nuage-soleil {
   position: relative;
-  top: 112px;
+  top: 110px;
   border: solid;
   border-radius: 50%;
   border-color: #2D4059;
@@ -61,7 +61,7 @@ body {
 }
 
 .meteo-bottom {
-  height: 50%;
+  height: 340px;
 }
 
 .form-meteo1 {
@@ -70,6 +70,8 @@ body {
 
 .ville-input {
   height: 30px;
+  display: block;
+  margin: 10px auto;
 }
 
 input[type="text"] {
@@ -98,7 +100,7 @@ input[type="text"] {
   border-color: #FFB400;
 }
 
-/* 2 EME PAGE */
+/*************************************************** 2 EME PAGE */
 h2 {
   font-size: 19px;
   width: 220px;
@@ -115,15 +117,34 @@ span {
   font-weight: bold;
 }
 
+.icon-meteo {
+  position: relative;
+  left: -200px;
+  top: 75px;
+}
+
 .city {
-  margin-top: 80px;
+  margin-top: 0px;
   color: #2D4059;
   margin-bottom: 15px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
 }
 
+.pays {
+  font-size: 25px;
+  color: #2D4059;
+  font-weight: lighter;
+}
+
 .second {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.display-donnees {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -135,6 +156,11 @@ span {
   width: 4px;
   background-color: #FFB400;
   margin: 10px;
+}
+
+.separation-smartphone {
+  height: 0;
+  width: 0;
 }
 
 .button-retour {
@@ -187,21 +213,29 @@ span {
 
 @media (max-width: 1028px) {
   .meteo {
-    width: 950px;
-    height: 900px;
-    margin-top: 10%;
-    border-width: 9px;
+    width: 940px;
+    height: 1200px;
+    margin: 7% 0;
+    border-width: 14px;
+  }
+
+  .meteo-top {
+    height: 350px;
   }
 
   .img-nuage-soleil {
     top: 180px;
-    width: 250px;
-    border-width: 7px;
+    width: 260px;
+    border-width: 12px;
   }
 
   .separation {
-    height: 8px;
-    width: 950px;
+    height: 12px;
+    width: 940px;
+  }
+
+  .meteo-bottom {
+    padding-top: 150px;
   }
 
   .form-meteo1 {
@@ -211,44 +245,72 @@ span {
   }
 
   .ville-input {
-    height: 60px;
+    height: 100px;
     margin-top: 50px;
   }
 
   input[type="text"] {
-    font-size: 45px;
+    font-size: 50px;
   }
 
   .button {
     min-width: 15rem;
-    font-size: 2.5rem;
-    padding: 1.2rem 1rem;
+    font-size: 2.8rem;
+    padding: 1.4rem 1rem;
     margin: 4rem;
   }
 
+/******************************************************* 2eme PAGE */
   h2 {
-    font-size: 35px;
-    width: 435px;
-    margin: 30px 0;
+    font-size: 40px;
+    width: 510px;
+    padding: 12px;
   }
 
   .city {
-    margin-top: 115px;
     font-size: 65px;
-    margin-bottom: 25px;
+    margin-bottom: 40px;
+  }
+
+  .pays {
+    font-size: 50px;
+  }
+
+  .icon-meteo {
+    left: -400px;
+    top: 145px;
+    width: 190px;
   }
 
   .second {
-    display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  }
+
+  .meteo-bottom-resultats {
+    padding-top: 0;
+  }
+
+  .display-donnees {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .donnees-top, .donnees-bottom {
+    margin: 0 0 40px;
   }
 
   .separation-verticale {
-    height: 105px;
-    width: 7px;
-    margin: 15px;
+    height: 0px;
+    width: 0px;
+    margin: 0px;
+  }
+
+  .separation-smartphone {
+    background-color: #FFB400;
+    height: 380px;
+    width: 12px;
+    position: relative;
+    left: -50px;
   }
 
   .button-retour {

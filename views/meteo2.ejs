@@ -29,26 +29,30 @@
       <div class="meteo-top">
         <img class="img-nuage-soleil" src="images/cloudy.png" alt="">
       </div>
-      <div class="separation">
-
-      </div>
+      <div class="separation"></div>
       <div class="meteo-bottom meteo-bottom-resultats">
-        <div class="first">
-          <h1 class="city"><%= city %></h1>
-        </div>
+
+        <!-- <div class="first"> -->
+          <img class="icon-meteo" src="<%= imageURL %>"/>
+          <h1 class="city"><%= city %>, <span class="pays"><%= country %></span></h1>
+        <!-- </div> -->
 
         <div class="second">
 
-          <div class="colonne1">
-            <h2>Température : <span> <%= temp %> </span></h2>
-            <h2>Ressentie : <span> <%= tempRessentie %> </span></h2>
-          </div>
+          <div class="separation-smartphone"></div>
 
-          <div class="separation-verticale"></div>
+          <div class="display-donnees">
+            <div class="colonne1">
+              <h2 class="donnees-top">Température : <span> <%= temp %> </span></h2>
+              <h2 class="donnees-bottom">Ressentie : <span> <%= tempRessentie %> </span></h2>
+            </div>
 
-          <div class="colonne2">
-            <h2>Humidité : <span> <%= humidite %> </span></h2>
-            <h2>Vent : <span> <%= vent %> </span></h2>
+            <div class="separation-verticale"></div>
+
+            <div class="colonne2">
+              <h2 class="donnees-top">Humidité : <span> <%= humidite %> </span></h2>
+              <h2 class="donnees-bottom">Vent : <span> <%= vent %> </span></h2>
+            </div>
           </div>
 
         </div>
