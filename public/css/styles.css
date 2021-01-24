@@ -101,6 +101,19 @@ input[type="text"] {
 }
 
 /*************************************************** 2 EME PAGE */
+.meteo-page2 {
+  height: 640px;
+  width: 620px;
+  background-color: #fff;
+  border: solid;
+  border-radius: 12px;
+  border-color: #fff;
+  border-width: 6px;
+  -webkit-box-shadow: 0px 0px 40px -13px rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0px 0px 40px -13px rgba(0, 0, 0, 0.7);
+  box-shadow: 0px 0px 40px -13px rgba(0, 0, 0, 0.7);
+}
+
 h2 {
   font-size: 19px;
   width: 220px;
