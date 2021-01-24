@@ -32,10 +32,10 @@
       <div class="separation"></div>
       <div class="meteo-bottom meteo-bottom-resultats">
 
-        <!-- <div class="first"> -->
-          <img class="icon-meteo" src="<%= imageURL %>"/>
-          <h1 class="city"><%= city %>, <span class="pays"><%= country %></span></h1>
-        <!-- </div> -->
+
+
+        <h1 class="city"><img class="icon-meteo" src="<%= imageURL %>" alt="image météo" /><%= city %>, <span class="pays"><%= country %></span><img class="country-flag" src="<%= flag %>" alt="drapeau pays"></h1>
+
 
         <div class="second">
 
@@ -51,7 +51,7 @@
 
             <div class="colonne2">
               <h2 class="donnees-top">Humidité : <span> <%= humidite %> </span></h2>
-              <h2 class="donnees-bottom">Vent : <span> <%= vent %> </span></h2>
+              <h2 class="donnees-bottom donnees-bottom-last">Vent : <span> <%= vent %> </span></h2>
             </div>
           </div>
 

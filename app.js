@@ -39,7 +39,6 @@ app.post("/", function(req, res) {
   queryRight = queryLowerFirstUpper + queryLowerRest;
 
   // RECUPERATION DES DONNEES DE L'API OPEN WEATHER MAP
-
   https.get(url, function(response) {
     console.log(response.statusCode);
 
@@ -52,11 +51,13 @@ app.post("/", function(req, res) {
         const vent = weatherData.wind.speed;
         const humidity = weatherData.main.humidity;
         const icon = weatherData.weather[0].icon;
-        const imageURL = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+        // const imageURL = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
+        // const flag = "http://purecatamphetamine.github.io/country-flag-icons/3x2/" + country + ".svg";
 
         res.render(__dirname + "/views/meteo2.ejs", {
           city: queryRight,
           country: country,
+          flag: "http://purecatamphetamine.github.io/country-flag-icons/3x2/" + country + ".svg",
           imageURL: "http://openweathermap.org/img/wn/" + icon + "@2x.png",
           temp: temp + "°C",
           tempRessentie: tempRessentie + "°C",
@@ -69,6 +70,9 @@ app.post("/", function(req, res) {
       res.render(__dirname + "/views/error.ejs");
     }
   });
+
+
+
 });
 
 // BOUTON RETOUR QUI REDIRIGE VERS HOME PAGE
