@@ -1,7 +1,5 @@
-
 /* font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif; */
-
 body {
   background-color: #2D4059;
   height: 100%;
@@ -206,6 +204,7 @@ span {
 .container-erreur {
   margin: 120px 0 0 250px;
 }
+
 .titre-erreur {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
@@ -222,12 +221,11 @@ span {
 }
 
 .img-erreur {
-   width: 150px;
-   margin-left: 450px;
+  width: 150px;
+  margin-left: 450px;
 }
 
 /* RESPONSIVE */
-
 @media (max-width: 1028px) {
   .meteo {
     width: 940px;
@@ -277,7 +275,14 @@ span {
     margin: 4rem;
   }
 
-/******************************************************* 2eme PAGE */
+  /******************************************************* 2eme PAGE */
+  .meteo-page2 {
+    width: 940px;
+    height: 1200px;
+    margin: 5% 0;
+    border-width: 14px;
+  }
+
   h2 {
     font-size: 40px;
     width: 510px;
@@ -346,7 +351,6 @@ span {
   }
 
   /* PAGE ERREUR */
-
   .container-erreur {
     margin: 50px 0 0 100px;
   }
@@ -357,6 +361,6 @@ span {
   }
 
   .img-erreur {
-     margin-left: 250px;
+    margin-left: 250px;
   }
 }
